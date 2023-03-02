@@ -1,5 +1,7 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -59,9 +61,49 @@ namespace StudentRecords
             }
             else
             {
-                Opening OpenOpening = new Opening();
-            OpenOpening.Show();
-            this.Close();
+                SqlConnection sqlCon = new SqlConnection(@"Data Source=LABSCIFIPC07\LOCALHOST; Initial Catalog=StudentRecords; Integrated Security=True");
+
+                try
+                {
+
+
+                    //opening the connection to the db 
+
+                    sqlCon.Open();
+
+                    //Build our actual query 
+
+                    string query = "INSERT INTO SignUpTable([First Name],[Last Name],[Email],[Username],[password], [repeat password])values ('" + this.txtFirstName.Text + "','" + this.txtLastName.Text + "','" + this.txtEmail.Text + "','" + this.txtUsername.Text + "','" + this.PasswordBox.Password +"','" + this.RePasswordBox.Password + "') ";
+
+                    //Establish a sql command
+
+                    SqlCommand cmd = new SqlCommand(query, sqlCon);
+
+                    cmd.ExecuteNonQuery();
+
+                    MessageBox.Show("Successfully saved");
+
+                    LogIn lg = new LogIn();
+                    lg.Show();
+                    this.Close();
+
+                }
+
+                catch (Exception ex)
+
+                {
+
+                    MessageBox.Show(ex.Message);
+
+                }
+
+                finally
+
+                {
+
+                    sqlCon.Close();
+
+                }
             }
         }
     }
