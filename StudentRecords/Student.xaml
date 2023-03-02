@@ -12,29 +12,29 @@
                 <StackPanel Orientation="Horizontal" Background="Black" Margin="0,20,0.333,0">
                     <Button x:Name="button" Margin="4,0,0,0" Width="52" Height="36" Click="button_Click" Foreground="White" BorderBrush="Black" >
                         <Button.Background>
-                            <ImageBrush ImageSource="H:\Programming\unnamed.png"/>
+                            <ImageBrush ImageSource="C:\Sisi\Book.png"/>
                         </Button.Background>
                     </Button>
                     <TextBox Height="24" TextWrapping="Wrap" Text="student_records.database" Margin="0,0,0,0" Width="155" Foreground="White" Background="Black" BorderBrush="Black"/>
                 </StackPanel>
                 <Label Content="Student" Foreground="White" FontSize="18" HorizontalAlignment="Center" Margin="74,-7,60.2,0" Height="36" Width="89"/>
                 <Label Content="First Name" Foreground="White" HorizontalAlignment="Center" Margin="78,-10,66.2,0" Width="79"/>
-                <TextBox x:Name="txtFirstName" Background="LightSlateGray" Foreground="white" FontSize="12" Margin="10,0,10.333,0" Height="15"/>
+                <TextBox x:Name="txtFirstName" Background="LightSlateGray" Foreground="white" FontSize="12" Margin="10,0,10.333,0" Height="16"/>
                 <Label Content="Last Name" Foreground="White" HorizontalAlignment="Center"/>
-                <TextBox x:Name="txtLastName" Background="LightSlateGray" Foreground="white" FontSize="12" Margin="10,0,10.333,0" Height="15"/>
+                <TextBox x:Name="txtLastName" Background="LightSlateGray" Foreground="white" FontSize="12" Margin="10,0,10.333,0" Height="16"/>
                 <Label Content="Gender" Foreground="White" HorizontalAlignment="Center"/>
-                <TextBox x:Name="txtGender" Background="LightSlateGray" Foreground="white" FontSize="12" Margin="10,0,10.333,0" Height="15"/>
+                <TextBox x:Name="txtGender" Background="LightSlateGray" Foreground="white" FontSize="12" Margin="10,0,10.333,0" Height="16"/>
                 <Label Content="Address" Foreground="White" HorizontalAlignment="Center"/>
-                <TextBox x:Name="txtAddress" Background="LightSlateGray" Foreground="white" FontSize="12" Margin="10,0,10.333,0" Height="15"/>
+                <TextBox x:Name="txtAddress" Background="LightSlateGray" Foreground="white" FontSize="12" Margin="10,0,10.333,0" Height="16"/>
                 <Label Content="Phone Number" Foreground="White" HorizontalAlignment="Center"/>
-                <TextBox x:Name="txtPhoneNumber" Background="LightSlateGray" Foreground="white" FontSize="12" Margin="10,0,10.333,0" Height="15"/>
+                <TextBox x:Name="txtPhoneNumber" Background="LightSlateGray" Foreground="white" FontSize="12" Margin="10,0,10.333,0" Height="16"/>
                 <Label Content="Section" Foreground="White" HorizontalAlignment="Center"/>
-                <TextBox x:Name="txtSection" Background="LightSlateGray" Foreground="white" FontSize="12" Margin="10,0,10.333,0" Height="15"/>
+                <TextBox x:Name="txtSection" Background="LightSlateGray" Foreground="white" FontSize="12" Margin="10,0,10.333,0" Height="16"/>
                 <Label Content="Academic Year" Foreground="White" HorizontalAlignment="Center"/>
-                <TextBox x:Name="txtYear" Background="LightSlateGray" Foreground="white" FontSize="12" Margin="10,0,10.333,0" Height="15"/>
+                <TextBox x:Name="txtYear" Background="LightSlateGray" Foreground="white" FontSize="12" Margin="10,0,10.333,0" Height="16"/>
                 <Label Content="Additional Info" Foreground="White" HorizontalAlignment="Center"/>
-                <TextBox x:Name="txtAddInfo" Background="LightSlateGray" Foreground="white" FontSize="12" Margin="10,0,10.333,0" Height="15"/>
-                <Button x:Name="GoToMenu" Content="Go To Menu" Margin="60,10,60.333,90" Background="DarkRed" Foreground="white" FontSize="16" Click="Submit_Click" />
+                <TextBox x:Name="txtAddInfo" Background="LightSlateGray" Foreground="white" FontSize="12" Margin="10,0,10.333,0" Height="16"/>
+                <Button x:Name="GoToMenu" Content="Go To Menu" Margin="60,4,60.333,90" Background="DarkRed" Foreground="white" FontSize="16" Click="Submit_Click" />
             </StackPanel>
         </Border>
     </Grid>

@@ -1,0 +1,25 @@
+﻿<Window x:Class="StudentRecords.ChooseSubject"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudentRecords"
+        mc:Ignorable="d"
+        Title="ChooseSubject" Height="500" Width="250">
+    <Border Background="Black" CornerRadius="20" Margin="10">
+        <StackPanel>
+            <StackPanel Orientation="Horizontal" Background="Black"  Margin="0,20,0.333,0" >
+                <Button Margin="0,0,0.333,0" Height="41" BorderBrush="Black" Background="Black">
+                    <StackPanel Orientation="Horizontal" Background="Black" >
+                        <Image Source="C:\Sisi\Book.png" Height="36" Width="64" RenderTransformOrigin="1.443,0.564" />
+                        <TextBox Height="24" TextWrapping="Wrap" Text="student_records.database" Margin="0,0,0,0" Width="155" Foreground="White" Background="Black" BorderBrush="Black"/>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+            <Label Content="  Pick a &#xD;&#xA;Subject" Foreground="White" FontSize="30" HorizontalAlignment="Center" Width="116" Height="86"/>
+            <Label Content="Subject Name" Foreground="white" FontSize="16" HorizontalAlignment="Center"/>
+            <ComboBox x:Name="comboBox" Margin="26.2,0,26.2,0" SelectionChanged="comboBox_SelectionChanged"/>
+            <Button x:Name="Submit" Content="Submit" Margin="60,19" Background="White" Foreground="Black" FontSize="18" Click="Submit_Click"/>
+        </StackPanel>
+    </Border>
+</Window>

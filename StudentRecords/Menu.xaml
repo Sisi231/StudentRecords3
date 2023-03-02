@@ -11,7 +11,7 @@
             <StackPanel>
                 <Button Margin="0,20,0.333,0" Height="41" BorderBrush="Black" Background="Black">
                     <StackPanel Orientation="Horizontal" Background="Black" >
-                        <Image Source="D:\Sisi\book.png" Height="36" Width="64" RenderTransformOrigin="1.443,0.564" />
+                        <Image Source="C:\Sisi\book.png" Height="36" Width="64" RenderTransformOrigin="1.443,0.564" />
                         <TextBox Height="24" TextWrapping="Wrap" Text="student_records.database" Margin="0,0,0,0" Width="155" Foreground="White" Background="Black" BorderBrush="Black"/>
                     </StackPanel>
                 </Button>

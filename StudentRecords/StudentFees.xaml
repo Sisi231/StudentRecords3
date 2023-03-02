@@ -12,7 +12,7 @@
                 <StackPanel Orientation="Horizontal" Background="Black" Margin="0,20,0.333,0">
                     <Button x:Name="button" Margin="4,0,0,0" Width="52" Height="36" Click="button_Click" Foreground="White" BorderBrush="Black" >
                         <Button.Background>
-                            <ImageBrush ImageSource="D:\Sisi\book.png"/>
+                            <ImageBrush ImageSource="C:\Sisi\book.png"/>
                         </Button.Background>
                     </Button>
                     <TextBox Height="24" TextWrapping="Wrap" Text="student_records.database" Margin="0,0,0,0" Width="155" Foreground="White" Background="Black" BorderBrush="Black"/>
@@ -21,7 +21,7 @@
                 <Label Content="Student ID" Foreground="White" HorizontalAlignment="Center" FontSize="15"/>
                 <TextBox x:Name="txtStudentID" Background="LightSlateGray" Foreground="white" FontSize="15" Margin="10,0,10.333,0" Height="20"/>
                 <Label Content="Amount" Foreground="White" HorizontalAlignment="Center" FontSize="15"/>
-                <TextBox x:Name="txtAmnount" Background="LightSlateGray" Foreground="white" FontSize="15" Margin="10,0,10.333,0" Height="20"/>
+                <TextBox x:Name="txtAmount" Background="LightSlateGray" Foreground="white" FontSize="15" Margin="10,0,10.333,0" Height="20"/>
                 <Label Content="Paid" Foreground="White" HorizontalAlignment="Center" FontSize="15"/>
                 <TextBox x:Name="txtPaid" Background="LightSlateGray" Foreground="white" FontSize="15" Margin="10,0,10.333,0" Height="20"/>
             </StackPanel>

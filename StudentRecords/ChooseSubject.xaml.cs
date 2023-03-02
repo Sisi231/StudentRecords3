@@ -17,30 +17,31 @@ using System.Windows.Shapes;
 namespace StudentRecords
 {
     /// <summary>
-    /// Interaction logic for ChooseStudent.xaml
+    /// Interaction logic for ChooseSubject.xaml
     /// </summary>
-    
-    public partial class ChooseStudent : Window
+    public partial class ChooseSubject : Window
     {
-        public ChooseStudent()
+        public string studentId;
+        public ChooseSubject(string student)
         {
+            studentId = student;
             InitializeComponent();
             fill_combo();
         }
-
-        void fill_combo(){
+        void fill_combo() 
+        {
             SqlConnection sqlCon = new SqlConnection(@"Data Source=DESKTOP-9B7GMJ6\SQLEXPRESS; Initial Catalog=StudentRecords; Integrated Security=True");
             try
             {
                 if (sqlCon.State == ConnectionState.Closed)
                     sqlCon.Open();
-                string query = "SELECT * FROM Student";
+                string query = $"SELECT * FROM Subject where Student_ID = '{studentId}'";
                 SqlCommand sqlCmd = new SqlCommand(query, sqlCon);
                 SqlDataReader dr = sqlCmd.ExecuteReader();
-                while (dr.Read()) 
+                while (dr.Read())
                 {
-                    string StudentID = dr.GetString(0);
-                    comboBox.Items.Add(StudentID);
+                    var SubjectName = dr.GetValue(1);
+                    comboBox.Items.Add(SubjectName);
                 }
             }
             catch (Exception ex)
@@ -53,18 +54,17 @@ namespace StudentRecords
                 sqlCon.Close();
             }
         }
+        public string ChoosenSubject;
+        private void comboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            ChoosenSubject = comboBox.Items[comboBox.SelectedIndex].ToString();
+        }
 
         private void Submit_Click(object sender, RoutedEventArgs e)
         {
-            
-            Student OpenStudent = new Student(StudentNumber);
-            OpenStudent.Show();
+            Subject OpenSubject = new Subject(studentId, ChoosenSubject);
+            OpenSubject.Show();
             this.Close();
-        }
-        public string StudentNumber;
-        private void comboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            StudentNumber = comboBox.Items[comboBox.SelectedIndex].ToString();
         }
     }
 }

@@ -62,6 +62,9 @@
     <Compile Include="ChooseStudent.xaml.cs">
       <DependentUpon>ChooseStudent.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ChooseSubject.xaml.cs">
+      <DependentUpon>ChooseSubject.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Grades.xaml.cs">
       <DependentUpon>Grades.xaml</DependentUpon>
     </Compile>
@@ -91,6 +94,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ChooseStudent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ChooseSubject.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

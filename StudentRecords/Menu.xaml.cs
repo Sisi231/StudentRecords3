@@ -19,14 +19,19 @@ namespace StudentRecords
     /// </summary>
     public partial class Menu : Window
     {
-        public Menu()
+        public string studentNumber1;
+        public Menu(string student)
         {
+
+            studentNumber1 = student;
             InitializeComponent();
         }
 
         private void Submit_Click1(object sender, RoutedEventArgs e)
         {
-
+            ChooseSubject openSubjects = new ChooseSubject(studentNumber1);
+            openSubjects.Show();
+            this.Close();
         }
 
         private void Submit_Click2(object sender, RoutedEventArgs e)
@@ -36,7 +41,7 @@ namespace StudentRecords
 
         private void Submit_Click4(object sender, RoutedEventArgs e)
         {
-            StudentFees OpenFees = new StudentFees();
+            StudentFees OpenFees = new StudentFees(studentNumber1);
             OpenFees.Show();
             this.Close();
         }
@@ -50,7 +55,9 @@ namespace StudentRecords
 
         private void Submit_Click3(object sender, RoutedEventArgs e)
         {
-
+            var openreports = new ChooseReport(studentNumber1);
+            openreports.Show();
+            this.Close();
         }
     }
 }
