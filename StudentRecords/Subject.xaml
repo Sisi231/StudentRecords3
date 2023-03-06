@@ -12,12 +12,12 @@
                 <StackPanel Orientation="Horizontal" Background="Black" Margin="0,20,0.333,0">
                     <Button x:Name="button" Margin="4,0,0,0" Width="52" Height="36" Click="button_Click" Foreground="White" BorderBrush="Black" >
                         <Button.Background>
-                            <ImageBrush ImageSource="H:\Programming\unnamed.png"/>
+                            <ImageBrush ImageSource="C:\Sisi\Book.png"/>
                         </Button.Background>
                     </Button>
                     <TextBox Height="24" TextWrapping="Wrap" Text="student_records.database" Margin="0,0,0,0" Width="155" Foreground="White" Background="Black" BorderBrush="Black"/>
                 </StackPanel>
-                <Label Content="Subjects" Foreground="White" FontSize="18" HorizontalAlignment="Center" Margin="72,-7,72.333,0" Height="36"/>
+                <Label Content=" Subjects" Foreground="White" FontSize="18" HorizontalAlignment="Center" Margin="65,-7,68.2,0" Height="36" Width="90"/>
                 <Label Content="Subject Name" Foreground="White" HorizontalAlignment="Center"/>
                 <TextBox x:Name="txtSubjectName" Background="LightSlateGray" Foreground="white" FontSize="12" Margin="10,0,10.333,0" Height="20"/>
                 <Label Content="Teacher ID" Foreground="White" HorizontalAlignment="Center"/>

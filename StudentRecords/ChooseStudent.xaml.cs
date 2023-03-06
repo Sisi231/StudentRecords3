@@ -29,7 +29,7 @@ namespace StudentRecords
         }
 
         void fill_combo(){
-            SqlConnection sqlCon = new SqlConnection(@"Data Source=LABSCIFIPC07\LOCALHOST; Initial Catalog=StudentRecords; Integrated Security=True");
+            SqlConnection sqlCon = new SqlConnection(@"Data Source=DESKTOP-9B7GMJ6\SQLEXPRESS; Initial Catalog=StudentRecords; Integrated Security=True");
             try
             {
                 if (sqlCon.State == ConnectionState.Closed)
