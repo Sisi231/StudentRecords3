@@ -20,8 +20,6 @@
                 <Label Content="Subjects" Foreground="White" FontSize="18" HorizontalAlignment="Center" Margin="72,-7,72.333,0" Height="36"/>
                 <Label Content="Subject Name" Foreground="White" HorizontalAlignment="Center"/>
                 <TextBox x:Name="txtSubjectName" Background="LightSlateGray" Foreground="white" FontSize="12" Margin="10,0,10.333,0" Height="20"/>
-                <Label Content="Student ID" Foreground="White" HorizontalAlignment="Center"/>
-                <TextBox x:Name="txtStudentID" Background="LightSlateGray" Foreground="white" FontSize="12" Margin="10,0,10.333,0" Height="20"/>
                 <Label Content="Teacher ID" Foreground="White" HorizontalAlignment="Center"/>
                 <TextBox x:Name="txtTeacherID" Background="LightSlateGray" Foreground="white" FontSize="12" Margin="10,0,10.333,0" Height="20"/>
                 <Label Content="Subject Description" Foreground="White" HorizontalAlignment="Center"/>

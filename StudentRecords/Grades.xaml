@@ -58,14 +58,6 @@
                     <Label Content="Geography" Foreground="White" HorizontalAlignment="Center" Margin="10,0,122.333,0" Width="91"/>
                     <TextBox x:Name="txt10" Background="LightSlateGray" Foreground="white" FontSize="12" Margin="-130,0,7.333,0" Height="20" Width="89"/>
                 </StackPanel>
-                <StackPanel Orientation="Horizontal" Background="Black" Margin="0,0,0.333,0">
-                    <Label Content="Art" Foreground="White" HorizontalAlignment="Center" Margin="10,0,122.333,0" Width="91"/>
-                    <TextBox x:Name="txt11" Background="LightSlateGray" Foreground="white" FontSize="12" Margin="-130,0,7.333,0" Height="20" Width="89"/>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal" Background="Black" Margin="0,0,0.333,0">
-                    <Label Content="Math 1" Foreground="White" HorizontalAlignment="Center" Margin="10,0,122.333,0" Width="91"/>
-                    <TextBox x:Name="txt12" Background="LightSlateGray" Foreground="white" FontSize="12" Margin="-130,0,7.333,0" Height="20" Width="89"/>
-                </StackPanel>
             </StackPanel>
         </Border>
     </Grid>

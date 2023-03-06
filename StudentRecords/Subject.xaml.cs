@@ -41,7 +41,6 @@ namespace StudentRecords
                 SqlCommand sqlCmd = new SqlCommand(query, sqlCon);
                 SqlDataReader dr = sqlCmd.ExecuteReader();
                 dr.Read();
-                txtStudentID.Text = Convert.ToString(dr["Student_ID"]);
                 txtSubjectName.Text = Convert.ToString(dr["SubjectName"]);
                 txtDescription.Text = Convert.ToString(dr["SubjctDescription"]);
                 txtTeacherID.Text = Convert.ToString(dr["Teacher_ID"]);

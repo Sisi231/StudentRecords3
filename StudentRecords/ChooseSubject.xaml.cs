@@ -35,7 +35,7 @@ namespace StudentRecords
             {
                 if (sqlCon.State == ConnectionState.Closed)
                     sqlCon.Open();
-                string query = $"SELECT * FROM Subject where Student_ID = '{studentId}'";
+                string query = $"SELECT * FROM Subject";
                 SqlCommand sqlCmd = new SqlCommand(query, sqlCon);
                 SqlDataReader dr = sqlCmd.ExecuteReader();
                 while (dr.Read())
