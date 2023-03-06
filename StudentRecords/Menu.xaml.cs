@@ -36,7 +36,9 @@ namespace StudentRecords
 
         private void Submit_Click2(object sender, RoutedEventArgs e)
         {
-
+            Grades OpenGrades = new Grades(studentNumber1);
+            OpenGrades.Show();
+            this.Close();
         }
 
         private void Submit_Click4(object sender, RoutedEventArgs e)

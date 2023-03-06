@@ -6,5 +6,68 @@
         xmlns:local="clr-namespace:StudentRecords"
         mc:Ignorable="d"
         Title="Grades" Height="500" Width="250">
-    
+    <Grid>
+        <Border Background="Black" CornerRadius="20" Margin="10">
+            <StackPanel>
+                <StackPanel Orientation="Horizontal" Background="Black" Margin="0,20,0.333,0">
+                    <Button x:Name="button" Margin="4,0,0,0" Width="52" Height="36" Click="button_Click" Foreground="White" BorderBrush="Black" >
+                        <Button.Background>
+                            <ImageBrush ImageSource="H:\Programming\unnamed.png"/>
+                        </Button.Background>
+                    </Button>
+                    <TextBox Height="24" TextWrapping="Wrap" Text="student_records.database" Margin="0,0,0,0" Width="155" Foreground="White" Background="Black" BorderBrush="Black"/>
+                </StackPanel >
+                <Label Content="Subjects" Foreground="White" FontSize="18" HorizontalAlignment="Center" Margin="72,-7,72.333,0" Height="36"/>
+                <StackPanel Orientation="Horizontal" Background="Black" Margin="0,0,0.333,0">
+                    <Label Content="Math 2" Foreground="White" HorizontalAlignment="Center" Margin="10,0,122.333,0" Width="91"/>
+                    <TextBox x:Name="txt1" Background="LightSlateGray" Foreground="white" FontSize="12" Margin="-130,0,7.333,0" Height="20" Width="89"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Background="Black" Margin="0,0,0.333,0">
+                    <Label Content="Bio" Foreground="White" HorizontalAlignment="Center" Margin="10,0,122.333,0" Width="91"/>
+                    <TextBox x:Name="txt2" Background="LightSlateGray" Foreground="white" FontSize="12" Margin="-130,0,7.333,0" Height="20" Width="89"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Background="Black" Margin="0,0,0.333,0">
+                    <Label Content="Physics" Foreground="White" HorizontalAlignment="Center" Margin="10,0,122.333,0" Width="91"/>
+                    <TextBox x:Name="txt3" Background="LightSlateGray" Foreground="white" FontSize="12" Margin="-130,0,7.333,0" Height="20" Width="89"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Background="Black" Margin="0,0,0.333,0">
+                    <Label Content="Informatics" Foreground="White" HorizontalAlignment="Center" Margin="10,0,122.333,0" Width="91"/>
+                    <TextBox x:Name="txt4" Background="LightSlateGray" Foreground="white" FontSize="12" Margin="-130,0,7.333,0" Height="20" Width="89"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Background="Black" Margin="0,0,0.333,0">
+                    <Label Content="Chemistry" Foreground="White" HorizontalAlignment="Center" Margin="10,0,122.333,0" Width="91"/>
+                    <TextBox x:Name="txt5" Background="LightSlateGray" Foreground="white" FontSize="12" Margin="-130,0,7.333,0" Height="20" Width="89"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Background="Black" Margin="0,0,0.333,0">
+                    <Label Content="BLL" Foreground="White" HorizontalAlignment="Center" Margin="10,0,122.333,0" Width="91"/>
+                    <TextBox x:Name="txt6" Background="LightSlateGray" Foreground="white" FontSize="12" Margin="-130,0,7.333,0" Height="20" Width="89"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Background="Black" Margin="0,0,0.333,0">
+                    <Label Content="Sports" Foreground="White" HorizontalAlignment="Center" Margin="10,0,122.333,0" Width="91"/>
+                    <TextBox x:Name="txt7" Background="LightSlateGray" Foreground="white" FontSize="12" Margin="-130,0,7.333,0" Height="20" Width="89"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Background="Black" Margin="0,0,0.333,0">
+                    <Label Content="Music" Foreground="White" HorizontalAlignment="Center" Margin="10,0,122.333,0" Width="91"/>
+                    <TextBox x:Name="txt8" Background="LightSlateGray" Foreground="white" FontSize="12" Margin="-130,0,7.333,0" Height="20" Width="89"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Background="Black" Margin="0,0,0.333,0">
+                    <Label Content="History" Foreground="White" HorizontalAlignment="Center" Margin="10,0,122.333,0" Width="91"/>
+                    <TextBox x:Name="txt9" Background="LightSlateGray" Foreground="white" FontSize="12" Margin="-130,0,7.333,0" Height="20" Width="89"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Background="Black" Margin="0,0,0.333,0">
+                    <Label Content="Geography" Foreground="White" HorizontalAlignment="Center" Margin="10,0,122.333,0" Width="91"/>
+                    <TextBox x:Name="txt10" Background="LightSlateGray" Foreground="white" FontSize="12" Margin="-130,0,7.333,0" Height="20" Width="89"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Background="Black" Margin="0,0,0.333,0">
+                    <Label Content="Art" Foreground="White" HorizontalAlignment="Center" Margin="10,0,122.333,0" Width="91"/>
+                    <TextBox x:Name="txt11" Background="LightSlateGray" Foreground="white" FontSize="12" Margin="-130,0,7.333,0" Height="20" Width="89"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Background="Black" Margin="0,0,0.333,0">
+                    <Label Content="Math 1" Foreground="White" HorizontalAlignment="Center" Margin="10,0,122.333,0" Width="91"/>
+                    <TextBox x:Name="txt12" Background="LightSlateGray" Foreground="white" FontSize="12" Margin="-130,0,7.333,0" Height="20" Width="89"/>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+    </Grid>
+
 </Window>

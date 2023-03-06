@@ -32,7 +32,7 @@ namespace StudentRecords
         }
         void fill() 
         {
-            SqlConnection sqlCon = new SqlConnection(@"Data Source=DESKTOP-9B7GMJ6\SQLEXPRESS; Initial Catalog=StudentRecords; Integrated Security=True");
+            SqlConnection sqlCon = new SqlConnection(@"Data Source=LABSCIFIPC07\LOCALHOST; Initial Catalog=StudentRecords; Integrated Security=True");
             try
             {
                 if (sqlCon.State == ConnectionState.Closed)
@@ -43,7 +43,7 @@ namespace StudentRecords
                 dr.Read();
                 txtStudentID.Text = Convert.ToString(dr["Student_ID"]);
                 txtSubjectName.Text = Convert.ToString(dr["SubjectName"]);
-                txtDescription.Text = Convert.ToString(dr["SubjectDescription"]);
+                txtDescription.Text = Convert.ToString(dr["SubjctDescription"]);
                 txtTeacherID.Text = Convert.ToString(dr["Teacher_ID"]);
             }
             catch (Exception ex)
